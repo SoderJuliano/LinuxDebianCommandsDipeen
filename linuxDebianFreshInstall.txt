@@ -58,6 +58,9 @@ sudo apt-get install -y docker-ce
 # Add current user to the docker users group (OPTIONAL)
 sudo usermod -aG docker $(whoami)
 
+# May need to give an explicit access to run not as superuser
+sudo chown <your local usar name>:docker /var/run/docker.sock
+
 # For linux where cat enable or even dont see wifi stettings 
 sudo apt update
 sudo apt install build-essential git dkms bc
