@@ -44,3 +44,19 @@ sudo apt-get install -y docker-ce
 
 # Add current user to the docker users group (OPTIONAL)
 sudo usermod -aG docker $(whoami)
+
+# For linux where cat enable or even dont see wifi stettings 
+sudo apt update
+sudo apt install build-essential git dkms bc
+git clone https://github.com/brektrou/rtl8821CU.git
+cd rtl8821CU
+chmod +x dkms-install.sh
+sudo ./dkms-install.sh
+
+It builds successfully, albeit with a few possibly harmless warnings, on my 5.0.0-23 system
+
+Next, do:
+
+sudo modprobe 8821cu
+
+Your wireless should now be working.
