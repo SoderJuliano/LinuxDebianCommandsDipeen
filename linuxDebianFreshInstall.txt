@@ -12,6 +12,9 @@ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
 source ~/.profile 
 
+# Command exemple
+nvm install 16.14.0  
+
 # Angular CLI install
 
 npm install -g @angular/cli
