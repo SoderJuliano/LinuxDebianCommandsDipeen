@@ -61,6 +61,16 @@ sudo usermod -aG docker $(whoami)
 # May need to give an explicit access to run not as superuser
 sudo chown <your local usar name>:docker /var/run/docker.sock
 
+# Docker-compose
+# Download the latest stable release of Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# Apply executable permissions to the binary
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Verify the installation
+docker-compose --version
+
 # For linux where cat enable or even dont see wifi stettings 
 sudo apt update
 sudo apt install build-essential git dkms bc
