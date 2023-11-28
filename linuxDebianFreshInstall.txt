@@ -86,3 +86,29 @@ Next, do:
 sudo modprobe 8821cu
 
 Your wireless should now be working.
+
+## In case or arch linux PACMAN:
+
+O Pacman é o gerenciador de pacotes usado no Arch Linux e em distribuições baseadas no Arch. Aqui estão os principais comandos do Pacman:
+
+Atualizar o sistema:
+
+sudo pacman -Syu - Sincroniza o banco de dados de pacotes e atualiza todos os pacotes instalados no sistema.
+Buscar um software:
+
+pacman -Ss nome_do_pacote - Pesquisa por um pacote específico no repositório. Pode ser usado para encontrar pacotes disponíveis para instalação.
+Instalar um pacote:
+
+sudo pacman -S nome_do_pacote - Instala um pacote específico no sistema.
+Remover um pacote:
+
+sudo pacman -R nome_do_pacote - Remove um pacote específico do sistema, mas mantém suas dependências não utilizadas.
+Remover um pacote e suas dependências não utilizadas:
+
+sudo pacman -Rs nome_do_pacote - Remove um pacote específico e todas as suas dependências não utilizadas.
+Limpar o cache de pacotes:
+
+sudo pacman -Sc - Remove todos os pacotes antigos do cache, liberando espaço em disco.
+
+ver ip: ip addr show
+
