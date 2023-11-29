@@ -112,3 +112,11 @@ sudo pacman -Sc - Remove todos os pacotes antigos do cache, liberando espaço em
 
 ver ip: ip addr show
 
+sudo pacman -Syu
+
+sudo pacman -S nodejs npm
+
+sudo npm install -g @angular/cli
+
+sudo pacman -S docker-compose
+
